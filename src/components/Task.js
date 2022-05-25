@@ -20,7 +20,7 @@ const Task = ({task, onDelete, onToggle}) => {
 }
 
 Task.propTypes = {
-  task: PropTypes.func,
+  task: PropTypes.object,
   onDelete: PropTypes.func,
   onToggle: PropTypes.func,
 

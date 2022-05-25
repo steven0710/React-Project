@@ -13,7 +13,7 @@ const Tasks = ({tasks, onDelete, onToggle}) => {
 }
 
 Tasks.propTypes = {
-  tasks: PropTypes.func,
+  tasks: PropTypes.array,
   onDelete: PropTypes.func,
   onToggle: PropTypes.func,
 
