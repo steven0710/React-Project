@@ -1,5 +1,6 @@
 import { FaTimes } from 'react-icons/fa'
-
+import React from 'react'
+import PropTypes from 'prop-types'
 const Task = ({task, onDelete, onToggle}) => {
   return (
     <div 
@@ -18,6 +19,11 @@ const Task = ({task, onDelete, onToggle}) => {
   )
 }
 
+Task.propTypes = {
+  task: PropTypes.func,
+  onDelete: PropTypes.func,
+  onToggle: PropTypes.func,
 
+}
 
 export default Task

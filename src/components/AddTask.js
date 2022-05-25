@@ -1,5 +1,6 @@
 import {useState} from 'react'
-
+import React from 'react'
+import PropTypes from 'prop-types'
 const AddTask = ({onAdd}) => {
     const[text, setText] = useState('')
     const[day, setDay] = useState('')
@@ -55,4 +56,7 @@ const onSubmit = (e) => {
   )
 }
 
+AddTask.propTypes = {
+    onAdd: PropTypes.func,
+  }
 export default AddTask

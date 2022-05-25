@@ -1,5 +1,6 @@
 import Task from './Task'
-
+import React from 'react'
+import PropTypes from 'prop-types'
 const Tasks = ({tasks, onDelete, onToggle}) => {
     return (
     <>
@@ -9,5 +10,12 @@ const Tasks = ({tasks, onDelete, onToggle}) => {
           </>
     //react fragment
   )
+}
+
+Tasks.propTypes = {
+  tasks: PropTypes.func,
+  onDelete: PropTypes.func,
+  onToggle: PropTypes.func,
+
 }
 export default Tasks
